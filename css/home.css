@@ -607,7 +607,7 @@ ul {
   position: relative;
   right: -15px;
   top: 35px;
-  padding: 15px 0;
+  padding: 15px 0 0 0;
   color: #002240;
   background: rgba(255,255,255,0.50);
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.10);
@@ -616,6 +616,12 @@ ul {
 
 .different__trace {
   padding-top: 40px;
+}
+
+.different__traditional--title {
+  font-weight: 500;
+  opacity: 0.4;
+  margin-bottom: 34px;
 }
 
 .different__text {
@@ -627,7 +633,13 @@ ul {
   color: #fff;
 }
 
+.different__text--traditional {
+  padding: 0.8rem 0;
+  margin: 0.4rem 0;
+}
+
 .different__highlight--traditional {
+  margin: 0.4rem 0;
   background: rgba(235,223,199,0.4);
 }
 
