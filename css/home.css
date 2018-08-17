@@ -596,6 +596,60 @@ ul {
 }
 
 /*
+* — Different —
+*/
+
+.different {
+  margin-top: 280px;
+}
+
+.different__traditional {
+  position: relative;
+  right: -15px;
+  top: 35px;
+  padding: 15px 0;
+  color: #002240;
+  background: rgba(255,255,255,0.50);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.10);
+  border-radius: 10px 0 0 10px;
+}
+
+.different__trace {
+  padding-top: 40px;
+}
+
+.different__text {
+  margin: 0 -15px;
+  padding: 1rem 0;
+}
+
+.different__text--trace {
+  color: #fff;
+}
+
+.different__highlight--traditional {
+  background: rgba(235,223,199,0.4);
+}
+
+.different__highlight--trace {
+  background: rgba(255,255,255,0.2);
+}
+
+.different__trace {
+  background: #F5735B;
+  box-shadow: 0 14px 20px 0 rgba(0,0,0,0.10);
+  border-radius: 30px;
+}
+
+/*
+* — Footer —
+*/
+
+footer {
+  margin-top: 200px;
+}
+
+/*
 * === BUTTONS ===
 */
 
