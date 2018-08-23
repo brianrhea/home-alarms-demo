@@ -1,7 +1,9 @@
-$(document).ready(function(){
-  // $('.testimonials__container').slick({
-  //   centerMode: true,
-  //   centerPadding: '60px',
-  //   slidesToShow: 1
-  // });
+$(document).ready(function () {
+  $('.testimonials__container').slick({
+    dots: true,
+    centerMode: true,
+    centerPadding: '60px',
+    variableWidth: true,
+    slidesToShow: 1
+  });
 });
