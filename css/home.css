@@ -101,6 +101,10 @@ ul {
   color: #002240;
 }
 
+.header__link.header__link--active {
+  font-weight: 700;
+}
+
 .header__btn.btn {
   margin-bottom: 0;
   padding: 0.15rem 3rem;
@@ -694,6 +698,99 @@ footer {
   font-size: 0.875rem;
   font-weight: 400;
   color: rgba(255,255,255,0.3);
+}
+
+/*
+* — How It Works —
+*/
+
+.how-it-works {
+  margin-top: 200px;
+}
+
+.how-it-works__row {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.how-it-works__time {
+  display: inline-block;
+  padding: 8px 18px 8px 38px;
+  border-radius: 50px;
+  background: url('/img/how-it-works__time.svg') 12px center / 20px 20px no-repeat;
+  font-size: 0.875rem;
+  color: rgba(0, 34, 64, .4);
+  background-color: rgba(0, 34, 64, .05)
+}
+
+.how-it-works__step--number {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #F5735B;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.how-it-works__title {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.how-it-works_desc {
+  display: block;
+  font-size: 1rem;
+  color: #7E8F9D;
+}
+
+.how-it-works__background--one {
+  position: absolute;
+  top: 180px;
+  right: -350px;
+  height: 588px;
+}
+
+.how-it-works__background--two {
+  position: absolute;
+  top: 180px;
+  right: -350px;
+  height: 588px;
+}
+
+/*
+* — FAQ —
+*/
+
+.categories__heading {
+  margin-top: 0;
+  font-weight: 400;
+  color: rgba(0,34,64,0.4);
+  border-bottom: 1px solid rgba(0,34,64,0.1);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.faq__question {
+  font-weight: 700;
+  color: rgba(0,34,64,1);
+}
+
+.faq__answer {
+}
+
+.categories__list--item {
+  margin-bottom: 1rem;
+}
+
+.categories__list--link {
+  color: #F5735B;
+}
+
+
+@media (min-width: 992px) {
+
 }
 
 /*
