@@ -7,10 +7,10 @@ $(document).ready(function () {
     centerMode: false,
     variableWidth: true,
     slidesToShow: 1,
-    mobileFirst: true,
+    mobileFirst: true,  // We approach the configuration as it was for the smallest screen
     respondTo: 'slider',
     responsive: [
-      {
+      { // Incrementally apply different configurations for other higher screen sizes
         breakpoint: 992,
         settings: {
           arrows: false,
