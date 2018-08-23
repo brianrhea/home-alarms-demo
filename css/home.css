@@ -147,8 +147,8 @@ ul {
 */
 
 .slick-track {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .slick-dots li {
@@ -192,14 +192,14 @@ ul {
 
 .testimonial {
   position: relative;
-  width: 825px;
+  width: 100vw;
   overflow: hidden;
   background: #FFFFFF;
   box-shadow: 0 4px 14px 0 rgba(0,34,64,0.20);
   border-radius: 10px;
   margin: 0 10px;
   opacity: 1;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .testimonial:not(.slick-center) {
@@ -247,6 +247,7 @@ ul {
 @media (min-width: 992px) {
   .testimonial {
     min-height: 458px;
+    width: 825px;
   }
   .testimonial__image {
     position: relative;
