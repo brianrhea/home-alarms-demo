@@ -789,8 +789,15 @@ footer {
   margin-bottom: 1rem;
 }
 
-.categories__list--link {
+.categories__list--link,
+.categories__list--link:active,
+.categories__list--link:hover,
+.categories__list--link:visited {
   color: #F5735B;
+}
+
+.categories__list--active {
+  font-weight: 700;
 }
 
 
