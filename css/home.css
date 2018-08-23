@@ -150,8 +150,13 @@ ul {
   margin-top: 260px;
 }
 
+.testimonial__container {
+  position: relative;
+}
+
 .testimonial {
   position: relative;
+  width: 872px;
   overflow: hidden;
   background: #FFFFFF;
   box-shadow: 0 4px 14px 0 rgba(0,34,64,0.20);

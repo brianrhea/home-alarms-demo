@@ -15,6 +15,12 @@
         <link rel="stylesheet" href="css/home.css">
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800" rel="stylesheet">
+
+        <!-- carousel -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -71,39 +77,197 @@
             </div>
         </div>
 
-        <div class="testimonials">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 offset-md-1">
-                        <h1 class="fw-600 text-center mb-5">See why these people chose Trace</h1>
-                        <div class="d-flex flex-column flex-md-row testimonial">
-                            <div>
-                                <img class="testimonial__image" src="//placehold.it/324x458" alt="">
-                            </div>
-                            <div class="testimonial__body">
-                                <h3 class="testimonial__title fw-600">Jordan worked with Lisa for translations and photography research in Germany</h3>
-                                <p class="testimonial__quote">The research exceeded my expectations. I would do it again in a heartbeat! I’m hoping to use Trace again for a future project very soon!</p>
-                                <div class="d-flex justify-content-between">
-                                    <div class="client d-flex align-items-start w-50">
-                                        <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
-                                        <div>
-                                            <div class="testimonial__name">Jordan</div>
-                                            <div class="testimonial__location">
-                                                Flagler Beach, FL
-                                            </div>
+        <div class="container testimonials">
+            <div class="row">
+                <div class="col-10 offset-md-1">
+                    <h1 class="fw-600 text-center mb-5">See why these people chose Trace</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="contiainer-fluid">
+            <div class="row">
+                <div class="testimonials__container d-flex">
+                    <div class="d-flex flex-column flex-md-row testimonial">
+                        <div>
+                            <img class="testimonial__image" src="/img/testmonial__image--susan-renaud-aimee@2x.png" alt="">
+                        </div>
+                        <div class="testimonial__body">
+                            <h3 class="testimonial__title fw-600">Susan worked with Renaud and Aimee to confirm or identify the identify of her ancestors' parents.</h3>
+                            <p class="testimonial__quote">"I am so very happy with this report! THANK YOU SO MUCH FOR FINDING THIS NEXT PIECE OF THE PUZZLE."</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="client d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">Susan</div>
+                                        <!--<div class="testimonial__location">
+                                            Flagler Beach, FL
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="professional position-relative d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">
+                                            Renaud and Aimee
+                                        </div>
+                                        <div class="testimonial__specialties">
+                                            <small class="testimonial__specialty">France</small>
                                         </div>
                                     </div>
-                                    <div class="professional position-relative d-flex align-items-start w-50">
-                                        <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
-                                        <div>
-                                            <div class="testimonial__name">
-                                                Lisa
-                                            </div>
-                                            <div class="testimonial__specialties">
-                                                <small class="testimonial__specialty">Translations</small>
-                                                <small class="testimonial__specialty">Imagery</small>
-                                                <small class="testimonial__specialty">Germany</small>
-                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row testimonial">
+                        <div>
+                            <img class="testimonial__image" src="/img/testmonial__image--susan-renaud-aimee@2x.png" alt="">
+                        </div>
+                        <div class="testimonial__body">
+                            <h3 class="testimonial__title fw-600">Susan worked with Renaud and Aimee to confirm or identify the identify of her ancestors' parents.</h3>
+                            <p class="testimonial__quote">"I am so very happy with this report! THANK YOU SO MUCH FOR FINDING THIS NEXT PIECE OF THE PUZZLE."</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="client d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">Susan</div>
+                                        <!--<div class="testimonial__location">
+                                            Flagler Beach, FL
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="professional position-relative d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">
+                                            Renaud and Aimee
+                                        </div>
+                                        <div class="testimonial__specialties">
+                                            <small class="testimonial__specialty">France</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row testimonial">
+                        <div>
+                            <img class="testimonial__image" src="/img/testmonial__image--susan-renaud-aimee@2x.png" alt="">
+                        </div>
+                        <div class="testimonial__body">
+                            <h3 class="testimonial__title fw-600">Susan worked with Renaud and Aimee to confirm or identify the identify of her ancestors' parents.</h3>
+                            <p class="testimonial__quote">"I am so very happy with this report! THANK YOU SO MUCH FOR FINDING THIS NEXT PIECE OF THE PUZZLE."</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="client d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">Susan</div>
+                                        <!--<div class="testimonial__location">
+                                            Flagler Beach, FL
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="professional position-relative d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">
+                                            Renaud and Aimee
+                                        </div>
+                                        <div class="testimonial__specialties">
+                                            <small class="testimonial__specialty">France</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row testimonial">
+                        <div>
+                            <img class="testimonial__image" src="/img/testmonial__image--susan-renaud-aimee@2x.png" alt="">
+                        </div>
+                        <div class="testimonial__body">
+                            <h3 class="testimonial__title fw-600">Susan worked with Renaud and Aimee to confirm or identify the identify of her ancestors' parents.</h3>
+                            <p class="testimonial__quote">"I am so very happy with this report! THANK YOU SO MUCH FOR FINDING THIS NEXT PIECE OF THE PUZZLE."</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="client d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">Susan</div>
+                                        <!--<div class="testimonial__location">
+                                            Flagler Beach, FL
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="professional position-relative d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">
+                                            Renaud and Aimee
+                                        </div>
+                                        <div class="testimonial__specialties">
+                                            <small class="testimonial__specialty">France</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row testimonial">
+                        <div>
+                            <img class="testimonial__image" src="/img/testmonial__image--susan-renaud-aimee@2x.png" alt="">
+                        </div>
+                        <div class="testimonial__body">
+                            <h3 class="testimonial__title fw-600">Susan worked with Renaud and Aimee to confirm or identify the identify of her ancestors' parents.</h3>
+                            <p class="testimonial__quote">"I am so very happy with this report! THANK YOU SO MUCH FOR FINDING THIS NEXT PIECE OF THE PUZZLE."</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="client d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">Susan</div>
+                                        <!--<div class="testimonial__location">
+                                            Flagler Beach, FL
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="professional position-relative d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">
+                                            Renaud and Aimee
+                                        </div>
+                                        <div class="testimonial__specialties">
+                                            <small class="testimonial__specialty">France</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row testimonial">
+                        <div>
+                            <img class="testimonial__image" src="/img/testmonial__image--susan-renaud-aimee@2x.png" alt="">
+                        </div>
+                        <div class="testimonial__body">
+                            <h3 class="testimonial__title fw-600">Susan worked with Renaud and Aimee to confirm or identify the identify of her ancestors' parents.</h3>
+                            <p class="testimonial__quote">"I am so very happy with this report! THANK YOU SO MUCH FOR FINDING THIS NEXT PIECE OF THE PUZZLE."</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="client d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">Susan</div>
+                                        <!--<div class="testimonial__location">
+                                            Flagler Beach, FL
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <div class="professional position-relative d-flex align-items-start w-50">
+                                    <img class="testimonial__avatar" src="//placehold.it/800x800" alt="">
+                                    <div>
+                                        <div class="testimonial__name">
+                                            Renaud and Aimee
+                                        </div>
+                                        <div class="testimonial__specialties">
+                                            <small class="testimonial__specialty">France</small>
                                         </div>
                                     </div>
                                 </div>
@@ -452,6 +616,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
 
     </body>
