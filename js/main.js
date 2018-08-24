@@ -1,10 +1,5 @@
 $(document).ready(function () {
 
-  $('.researchers').on('swipe', function(event, slick, direction){
-    console.log(event);
-    console.log(slick);
-  });
-
   $('.researchers').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     if ( nextSlide === 0 ) {
       $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '170px', 'right': '-1120px', 'transform': 'scale(2.5)'});
@@ -32,6 +27,14 @@ $(document).ready(function () {
     slidesToScroll: 3
   });
 
+  $('.testimonials__container').on('click', '.slick-slide', function (e) {
+    e.stopPropagation();
+    var index = $(this).data("slick-index");
+    if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
+      $('.slick-slider').slick('slickGoTo', index);
+    }
+  });
+
   var $slider = $('.testimonials__container');
   var timeout;
 
@@ -53,6 +56,15 @@ $(document).ready(function () {
         }
       },
     ]
+  });
+
+  $('.slick-dots').prepend("<span class='slick__prev'>< Previous</span>");
+  $('.slick-dots').append("<span class='slick__next'>Next ></span>");
+  $('.slick__prev').on('click', function(){
+    $slider.slick('slickPrev');
+  });
+  $('.slick__next').on('click', function(){
+    $slider.slick('slickNext');
   });
 
   /**
