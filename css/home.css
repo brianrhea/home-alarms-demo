@@ -626,10 +626,10 @@ ul {
 .map__map {
   position: absolute;
   width: 100%;
-  top: 170px;
-  right: -1120px;
+  top: -310px;
+  right: -1170px;
   transition: all .8s ease;
-  transform: scale(2.5);
+  transform: scale(2.5) rotate(-19deg);
 }
 
 .z-0 {
