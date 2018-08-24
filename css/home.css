@@ -174,7 +174,12 @@ ul {
 }
 
 .slick-dotted.slick-slider {
-  margin-bottom: 0;
+  margin-bottom: 0!important;
+}
+
+.slick-dots {
+  width: auto!important;
+  display: inline-block!important;
 }
 
 .slick-dots li {
@@ -210,15 +215,23 @@ ul {
   font-size: 0.8rem;
   color: rgba(0,0,0,0.35);
   position: relative;
-  top: 25px;
+  top: 23px;
 }
 
-.slick__prev {
-  left: -64px;
+.testimonials__nav .slick__prev {
+  left: -70px;
 }
 
-.slick__next {
-  left: 40px;
+.testimonials__nav .slick__next {
+  left: 43px;
+}
+
+.researchers__nav .slick__prev {
+  left: -90px;
+}
+
+.researchers__nav .slick__next {
+  left: 63px;
 }
 
 .slick__prev:hover,
@@ -242,6 +255,8 @@ ul {
 .testimonials__nav {
   position: relative;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .testimonial {
@@ -628,6 +643,14 @@ ul {
 
 .researchers {
   /*margin-top: 260px;*/
+}
+
+.researchers__nav {
+  position: relative;
+  top: -25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .researcher {

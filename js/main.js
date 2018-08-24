@@ -34,11 +34,11 @@ $(document).ready(function () {
     ]
   });
 
-  $('.slick__prev').on('click', function(){
+  $('.testimonials__nav .slick__prev').on('click', function(){
     $testimonails__slider.slick('slickPrev');
   });
 
-  $('.slick__next').on('click', function(){
+  $('.testimonials__nav .slick__next').on('click', function(){
     $testimonails__slider.slick('slickNext');
   });
 
@@ -56,22 +56,22 @@ $(document).ready(function () {
 
   $('.researchers').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     if ( nextSlide === 0 ) {
-      $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '170px', 'right': '-1120px', 'transform': 'scale(2.5)'});
+      $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '-310px', 'right': '-1170px', 'transform': 'scale(2.5) rotate(-19deg)'});
     }
     if ( nextSlide === 3 ) {
-      $(".map__map").attr('src', "/img/map__eastern-europe.svg").css({'top': '410px', 'right': '100px', 'transform': 'scale(3.5)'});
+      $(".map__map").attr('src', "/img/map__eastern-europe.svg").css({'top': '270px', 'right': '390px', 'transform': 'scale(5) rotate(26deg)'});
     }
     if ( nextSlide === 6 ) {
-      $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '170px', 'right': '-1120px', 'transform': 'scale(2.5)'});
+      $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '-310px', 'right': '-1170px', 'transform': 'scale(2.5) rotate(-19deg)'});
     }
     if ( nextSlide === 9 ) {
-      $(".map__map").attr('src', "/img/map__western-europe.svg").css({'top': '370px', 'right': '-50px', 'transform': 'scale(3.5)'});
+      $(".map__map").attr('src', "/img/map__western-europe.svg").css({'top': '150px', 'right': '-50px', 'transform': 'scale(3.5)'});
     }
     if ( nextSlide === 12 ) {
-      $(".map__map").attr('src', "/img/map__british.svg").css({'top': '730px', 'right': '-320px', 'transform': 'scale(5)'});
+      $(".map__map").attr('src', "/img/map__british.svg").css({'top': '530px', 'right': '-320px', 'transform': 'scale(5)'});
     }
     if ( nextSlide === 15 ) {
-      $(".map__map").attr('src', "/img/map__canada.svg").css({'top': '420px', 'right': '-800px', 'transform': 'scale(2)'});
+      $(".map__map").attr('src', "/img/map__canada.svg").css({'top': '220px', 'right': '-800px', 'transform': 'scale(2)'});
     }
   });
 
@@ -80,7 +80,17 @@ $(document).ready(function () {
   $researchers__slider.slick({
     dots: true,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    appendArrows: ".researchers__nav",
+    appendDots: ".researchers__nav"
+  });
+
+  $('.researchers__nav .slick__prev').on('click', function(){
+    $researchers__slider.slick('slickPrev');
+  });
+
+  $('.researchers__nav .slick__next').on('click', function(){
+    $researchers__slider.slick('slickNext');
   });
 
 });
