@@ -864,6 +864,12 @@ footer {
   background-color: rgba(0, 34, 64, .05)
 }
 
+.how-it-works__step {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #002240;
+}
+
 .how-it-works__step--number {
   width: 40px;
   height: 40px;
@@ -872,12 +878,6 @@ footer {
   border-radius: 50px;
   font-weight: 700;
   color: #fff;
-}
-
-.how-it-works__title {
-  display: block;
-  margin-bottom: 14px;
-  font-weight: 600;
 }
 
 .how-it-works_desc {
