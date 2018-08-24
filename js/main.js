@@ -1,5 +1,59 @@
 $(document).ready(function () {
 
+  $('.testimonials__container').on('click', '.slick-slide', function (e) {
+    e.stopPropagation();
+    var index = $(this).data("slick-index");
+    if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
+      $('.slick-slider').slick('slickGoTo', index);
+    }
+  });
+
+  var $testimonails__slider = $('.testimonials__container');
+  var timeout;
+
+  $testimonails__slider.slick({
+    dots: true,
+    arrows: true,
+    centerMode: false,
+    variableWidth: true,
+    slidesToShow: 1,
+    mobileFirst: true,  // We approach the configuration as it was for the smallest screen
+    respondTo: 'slider',
+    appendArrows: ".testimonials__nav",
+    appendDots: ".testimonials__nav",
+    responsive: [
+      { // Incrementally apply different configurations for other higher screen sizes
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 1
+        }
+      },
+    ]
+  });
+
+  $('.slick__prev').on('click', function(){
+    $testimonails__slider.slick('slickPrev');
+  });
+
+  $('.slick__next').on('click', function(){
+    $testimonails__slider.slick('slickNext');
+  });
+
+  /**
+   * This fixes the fact that the slide will move after resizing the viewport. (https://github.com/kenwheeler/slick/issues/429)
+   * Usually resizing doesn't happen, but if the user does it he will not the slide has moved towards a side. This centers the slide
+   *
+   */
+  $(window).resize(function() {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      $testimonails__slider.slick('slickGoTo', 0);
+    }, 50);
+  });
+
   $('.researchers').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     if ( nextSlide === 0 ) {
       $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '170px', 'right': '-1120px', 'transform': 'scale(2.5)'});
@@ -21,62 +75,13 @@ $(document).ready(function () {
     }
   });
 
-  $('.researchers').slick({
+  var $researchers__slider = $('.researchers');
+
+  $researchers__slider.slick({
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 3
   });
 
-  $('.testimonials__container').on('click', '.slick-slide', function (e) {
-    e.stopPropagation();
-    var index = $(this).data("slick-index");
-    if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
-      $('.slick-slider').slick('slickGoTo', index);
-    }
-  });
-
-  var $slider = $('.testimonials__container');
-  var timeout;
-
-  $slider.slick({
-    dots: true,
-    centerMode: false,
-    variableWidth: true,
-    slidesToShow: 1,
-    mobileFirst: true,  // We approach the configuration as it was for the smallest screen
-    respondTo: 'slider',
-    responsive: [
-      { // Incrementally apply different configurations for other higher screen sizes
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '60px',
-          slidesToShow: 1
-        }
-      },
-    ]
-  });
-
-  $('.slick-dots').prepend("<span class='slick__prev'>< Previous</span>");
-  $('.slick-dots').append("<span class='slick__next'>Next ></span>");
-  $('.slick__prev').on('click', function(){
-    $slider.slick('slickPrev');
-  });
-  $('.slick__next').on('click', function(){
-    $slider.slick('slickNext');
-  });
-
-  /**
-   * This fixes the fact that the slide will move after resizing the viewport. (https://github.com/kenwheeler/slick/issues/429)
-   * Usually resizing doesn't happen, but if the user does it he will not the slide has moved towards a side. This centers the slide
-   *
-   */
-  $(window).resize(function() {
-    if (timeout) clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      $slider.slick('slickGoTo', 0);
-    }, 50);
-  });
 });
 
