@@ -1,11 +1,36 @@
 $(document).ready(function () {
 
-$('.researchers').slick({
-  dots: true,
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3
-});
+  $('.researchers').on('swipe', function(event, slick, direction){
+    console.log(event);
+    console.log(slick);
+  });
+
+  $('.researchers').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    if ( nextSlide === 0 ) {
+      $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '170px', 'right': '-1120px', 'transform': 'scale(2.5)'});
+    }
+    if ( nextSlide === 3 ) {
+      $(".map__map").attr('src', "/img/map__eastern-europe.svg").css({'top': '410px', 'right': '100px', 'transform': 'scale(3.5)'});
+    }
+    if ( nextSlide === 6 ) {
+      $(".map__map").attr('src', "/img/map__us-mexico.svg").css({'top': '170px', 'right': '-1120px', 'transform': 'scale(2.5)'});
+    }
+    if ( nextSlide === 9 ) {
+      $(".map__map").attr('src', "/img/map__western-europe.svg").css({'top': '370px', 'right': '-50px', 'transform': 'scale(3.5)'});
+    }
+    if ( nextSlide === 12 ) {
+      $(".map__map").attr('src', "/img/map__british.svg").css({'top': '730px', 'right': '-320px', 'transform': 'scale(5)'});
+    }
+    if ( nextSlide === 15 ) {
+      $(".map__map").attr('src', "/img/map__canada.svg").css({'top': '420px', 'right': '-800px', 'transform': 'scale(2)'});
+    }
+  });
+
+  $('.researchers').slick({
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
 
   var $slider = $('.testimonials__container');
   var timeout;

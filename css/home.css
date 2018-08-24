@@ -562,17 +562,29 @@ ul {
 
 .map__map {
   position: absolute;
-  top: 200px;
   width: 100%;
+  top: 170px;
+  right: -1120px;
+  transition: all .8s ease;
+  transform: scale(2.5);
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  position: relative;
+  z-index: 1;
 }
 
 .researchers {
-  margin-top: 260px;
+  /*margin-top: 260px;*/
 }
 
 .researcher {
   position: relative;
-  background: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.10);
   border-radius: 20px;
   padding: 20px;
