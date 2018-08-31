@@ -79,10 +79,20 @@ $(document).ready(function () {
 
   $researchers__slider.slick({
     dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    mobileFirst: true,  // We approach the configuration as it was for the smallest screen
     appendArrows: ".researchers__nav",
-    appendDots: ".researchers__nav"
+    appendDots: ".researchers__nav",
+    responsive: [
+      { // Incrementally apply different configurations for other higher screen sizes
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+    ]
   });
 
   $('.researchers__nav .slick__prev').on('click', function(){

@@ -28,7 +28,10 @@
         <![endif]-->
 
     <div class="bg">
-        <img class="hero__background" src="img/hero__background@2x.jpg" alt="">
+        <img class="hero__background" srcset="
+            /img/hero__background.jpg 1x,
+            /img/hero__background@2x.jpg 2x
+        " alt="">
     </div>
 
     <div class="header">
@@ -58,7 +61,10 @@
     </div>
 
     <div class="bg">
-        <img class="brief__background" src="img/brief__background@2x.jpg" alt="">
+        <img class="brief__background" srcset="
+            /img/brief__background.jpg 1x,
+            /img/brief__background@2x.jpg 2x
+        " alt="">
     </div>
 
     <div class="brief">
@@ -73,7 +79,7 @@
                         <li class="list-item__check">We find the best-qualified researchers for your project</li>
                         <li class="list-item__check">You decide if one of the proposals is right for you</li>
                     </ul>
-                    <p><button class="btn btn-outline-secondary">Learn more about our process</button></p>
+                    <p><button class="btn btn-outline-secondary">Learn more <span class="d-none d-md-inline-block">about our process</span></button></p>
                 </div>
             </div>
         </div>
@@ -81,8 +87,8 @@
 
     <div class="container testimonials">
         <div class="row">
-            <div class="col-10 offset-md-1">
-                <h1 class="fw-600 text-center mb-5">See why these people chose Trace</h1>
+            <div class="col-12 col-md-10 offset-md-1">
+                <h1 class="fw-600 text-center">See why these people chose Trace</h1>
             </div>
         </div>
     </div>
@@ -90,7 +96,10 @@
     <div class="testimonials__container">
         <div class="d-flex flex-column flex-md-row testimonial">
             <div>
-                <img class="testimonial__image" src="/img/testmonial__image--susan-renaud-aimee@2x.png" alt="">
+                <img class="testimonial__image" srcset="
+                    /img/testmonial__image--susan-renaud-aimee.png 1x,
+                    /img/testmonial__image--susan-renaud-aimee@2x.png 2x
+                "  alt="">
             </div>
             <div class="testimonial__body">
                 <h3 class="testimonial__title fw-600">Susan worked with Renaud and Aimee to confirm or identify the identify of her ancestors' parents.</h3>
@@ -122,7 +131,10 @@
         </div>
         <div class="d-flex flex-column flex-md-row testimonial">
             <div>
-                <img class="testimonial__image" src="/img/testmonial__image--diane-cornelia@2x.png" alt="">
+                <img class="testimonial__image" srcset="
+                    /img/testmonial__image--diane-cornelia.png 1x,
+                    /img/testmonial__image--diane-cornelia@2x.png 2x
+                "  alt="">
             </div>
             <div class="testimonial__body">
                 <h3 class="testimonial__title fw-600">Diane worked with Cornelia to determine birth and death dates of an ancestor's parents.</h3>
@@ -153,7 +165,10 @@
         </div>
         <div class="d-flex flex-column flex-md-row testimonial">
             <div>
-                <img class="testimonial__image" src="/img/testmonial__image--mike-michal@2x.png" alt="">
+                <img class="testimonial__image" srcset="
+                    /img/testmonial__image--mike-michal.png 1x,
+                    /img/testmonial__image--mike-michal@2x.png 2x
+                "  alt="">
             </div>
             <div class="testimonial__body">
                 <h3 class="testimonial__title fw-600">Mike worked with Michal to locate birth record and marriage records from the late 1800's.</h3>
@@ -184,7 +199,10 @@
         </div>
         <div class="d-flex flex-column flex-md-row testimonial">
             <div>
-                <img class="testimonial__image" src="/img/testmonial__image--david-cornelia@2x.png" alt="">
+                <img class="testimonial__image" srcset="
+                    /img/testmonial__image--david-cornelia.png 1x,
+                    /img/testmonial__image--david-cornelia@2x.png 2x
+                "  alt="">
             </div>
             <div class="testimonial__body">
                 <h3 class="testimonial__title fw-600">David worked with Cornelia to identify the full names and birthdates for all 8 children of an ancestor.</h3>
@@ -220,7 +238,10 @@
     </div>
 
     <div class="bg">
-        <img class="stuck__background" src="img/stuck__background@2x.jpg" alt="">
+        <img class="stuck__background" srcset="
+            /img/stuck__background.jpg 1x,
+            /img/stuck__background@2x.jpg 2x
+        " alt="">
     </div>
 
     <div class="stuck">
@@ -228,7 +249,7 @@
             <div class="row">
                 <div class="col-12 offset-md-6 col-md-6 text-center">
                     <h1>Are you stuck or don't know where to begin?</h1>
-                    <p><button class="btn btn-secondary">Get started with Trace today!</button></p>
+                    <p><button class="btn btn-secondary">Get started <span class="d-none d-sm-inline-block">with Trace</span> today!</button></p>
                 </div>
             </div>
         </div>
@@ -250,28 +271,28 @@
             </div>
             <div class="row position-relative">
                 <img class="process__path" src="/img/process__path.svg" alt="">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
                     <div class="process__card">
                         <img class="process__dot process__dot--one" src="/img/process__dot.svg" alt="">
                         <strong class="process__title">Tell Us Your Objective</strong>
                         <small class="process_desc">You provide us with the objective for your research project and some background information</small>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
                     <div class="process__card">
                         <img class="process__dot process__dot--two" src="/img/process__dot.svg" alt="">
                         <strong class="process__title">We Scope Your Project</strong>
                         <small class="process_desc">We collect your information and translate your objective in a project that our researchers can bid on</small>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
                     <div class="process__card">
                         <img class="process__dot process__dot--three" src="/img/process__dot.svg" alt="">
                         <strong class="process__title">We Find the Best Pros</strong>
                         <small class="process_desc">We curate the best professionals in our network for your objective and ask them to submit a bid</small>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
                     <div class="process__card">
                         <img class="process__dot process__dot--four" src="/img/process__dot.svg" alt="">
                         <strong class="process__title">We Screen Proposals</strong>
@@ -285,7 +306,7 @@
                 </div>
             </div>
             <div class="row position-relative">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
                     <div class="process__card">
                         <img class="process__dot process__dot--five" src="/img/process__dot.svg" alt="">
                         <strong class="process__title">You Decide If a Proposal Is Right For You</strong>
@@ -304,7 +325,10 @@
     </div>
 
     <div class="bg">
-        <img class="wasted__background" src="img/wasted__background@2x.jpg" alt="">
+        <img class="wasted__background" srcset="
+            /img/wasted__background.jpg 1x,
+            /img/wasted__background@2x.jpg 2x
+        " alt="">
     </div>
 
     <div class="wasted">
@@ -532,7 +556,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h1>Do you need localized help to solve your research problem?</h1>
-                    <p><button class="btn btn-primary">Find a researcher on the ground with Trace!</button></p>
+                    <p><button class="btn btn-primary">Find a researcher <span class="d-none d-md-inline-block">on the ground</span> with Trace!</button></p>
                 </div>
             </div>
         </div>
@@ -574,7 +598,10 @@
     </div>
 
     <div class="bg">
-        <img class="researcher-cta__background" src="img/researcher-cta__background@2x.jpg" alt="">
+        <img class="researcher-cta__background" srcset="
+            /img/researcher-cta__background.jpg 1x,
+            /img/researcher-cta__background@2x.jpg 2x
+        " alt="">
     </div>
 
     <div class="researcher-cta">
@@ -582,7 +609,7 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <h1>Are you a researcher interested in joining our global network of professionals?</h1>
-                    <p><button class="btn btn-secondary">Contact us to begin the interview process</button></p>
+                    <p><button class="btn btn-secondary">Contact us<span class="d-none d-md-inline-block"> to begin the interview process</span></button></p>
                 </div>
             </div>
         </div>
@@ -597,7 +624,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-5 text-center">
+                <div class="d-none d-md-flex col-md-5 text-center">
                     <div class="different__traditional">
                         <h5 class="different__traditional--title">Traditional<br />Research Agencies</h5>
                         <p class="different__text different__text--traditional different__highlight--traditional">Unknown
@@ -613,7 +640,7 @@
                             customer service</p>
                     </div>
                 </div>
-                <div class="different__trace col-7 text-center">
+                <div class="different__trace col-12 col-md-7 text-center">
                     <img class="mb-5" src="/img/logo--white.svg" alt="">
                     <p class="different__text different__text--trace different__highlight--trace">We de-risk your project
                         before we start</p>
@@ -632,7 +659,10 @@
     </div>
 
     <div class="bg">
-        <img class="footer__background" src="img/footer__background@2x.png" alt="">
+        <img class="footer__background" srcset="
+            /img/footer__background.png 1x,
+            /img/footer__background@2x.png 2x
+        " alt="">
     </div>
 
     <footer class="footer pb-5">
@@ -643,7 +673,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <dl class="footer__list">
                         <dt class="footer__title">Trace</dt>
                         <dd class="footer__list-item"><a class="footer__link" href="#">Services</a></dd>
@@ -651,7 +681,7 @@
                         <dd class="footer__list-item"><a class="footer__link" href="#">FAQ</a></dd>
                     </dl>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <dl class="footer__list">
                         <dt class="footer__title">Legal</dt>
                         <dd class="footer__list-item"><a class="footer__link" href="#">Privacy</a></dd>
@@ -659,7 +689,7 @@
                         <dd class="footer__list-item"><a class="footer__link" href="#">GDPR</a></dd>
                     </dl>
                 </div>
-                <div class="col-2">
+                <div class="col-4 col-md-2">
                     <dl class="footer__list">
                         <dt class="footer__title">Connect</dt>
                         <dd class="footer__list-item"><a class="footer__link" href="#">Facebook</a></dd>
@@ -669,7 +699,7 @@
                 </div>
                 <div class="col ml-auto"></div>
             </div>
-            <div class="row d-flex align-items-end mt-5">
+            <div class="row d-flex align-items-end mt-5 text-center text-md-left">
                 <div class="col-12 col-md-4">
                     <p class="footer__text">
                         +1 801-797-1940<br /> Monday - Friday: 8:00 AM - 6:00 PM
@@ -682,7 +712,7 @@
                         Made with ❤️ in Provo, UT<br /> © 2018 Trace Inc. All right reserved.
                     </p>
                 </div>
-                <div class="col-12 col-md-4 text-right">
+                <div class="col-12 col-md-4 text-center text-md-right">
                     <p class="footer__text">
                         560 S 100 W Ste. 6
                         <br /> Provo, UT, 84606
