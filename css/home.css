@@ -578,118 +578,141 @@ ul {
 }
 
 .network__faces {
+  position: relative;
+  top: 40px;
   min-height: 450px;
 }
 
 .network__face {
   position: absolute;
   border-radius: 100px;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 .network__face--one {
   top: 8%;
   left: 5%;
-  animation: network__faces--animation 25s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 25s ease-in-out infinite;
+  animation: network__faces--animation 45s ease-in-out infinite;
+  -webkit-animation: network__faces--animation 45s ease-in-out infinite;
 }
 
 .network__face--two {
   top: 0;
   left: 35%;
-  animation: network__faces--animation 19.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 19.5s ease-in-out infinite;
+  animation: network__faces--animation-two 40.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation-two 40.5s ease-in-out infinite;
 }
 
 .network__face--three {
-  top: 25%;
+  top: 19%;
   right: 25%;
-  animation: network__faces--animation 22.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 22.5s ease-in-out infinite;
+  animation: network__faces--animation 42.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation 42.5s ease-in-out infinite;
 }
 
 .network__face--four {
-  top: 2%;
-  right: 7%;
-  animation: network__faces--animation 21.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 21.5s ease-in-out infinite;
+  top: 3%;
+  right: 0;
+  animation: network__faces--animation-two 41.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation-two 41.5s ease-in-out infinite;
 }
 
 .network__face--five {
   top: 40%;
   left: 10%;
-  animation: network__faces--animation 21s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 21s ease-in-out infinite;
+  animation: network__faces--animation 41s ease-in-out infinite;
+  -webkit-animation: network__faces--animation 41s ease-in-out infinite;
 }
 
 .network__face--six {
   top: 30%;
   left: 35%;
-  animation: network__faces--animation 20.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 20.5s ease-in-out infinite;
+  animation: network__faces--animation-two 40.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation-two 40.5s ease-in-out infinite;
 }
 
 .network__face--seven {
   top: 50%;
-  right: 35%;
-  animation: network__faces--animation 24.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 24.5s ease-in-out infinite;
+  right: 32%;
+  animation: network__faces--animation 44.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation 44.5s ease-in-out infinite;
 }
 
 .network__face--eight {
   top: 40%;
   right: 0;
-  animation: network__faces--animation 23.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 23.5s ease-in-out infinite;
+  animation: network__faces--animation-two 43.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation-two 43.5s ease-in-out infinite;
 }
 
 .network__face--nine {
-  bottom: 6%;
-  left: 2%;
-  animation: network__faces--animation 21.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 21.5s ease-in-out infinite;
+  bottom: 12%;
+  left: 29%;
+  animation: network__faces--animation 41.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation 41.5s ease-in-out infinite;
 }
 
 .network__face--ten {
   bottom: 8%;
   left: 25%;
-  animation: network__faces--animation 22.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 22.5s ease-in-out infinite;
+  animation: network__faces--animation-two 42.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation-two 42.5s ease-in-out infinite;
 }
 
 .network__face--eleven {
-  bottom: 0;
-  right: 25%;
-  animation: network__faces--animation 24.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 24.5s ease-in-out infinite;
+  bottom: 8%;
+  right: 15%;
+  animation: network__faces--animation 44.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation 44.5s ease-in-out infinite;
 }
 
 .network__face--twelve {
   bottom: 5%;
   right: 0;
-  animation: network__faces--animation 21.5s ease-in-out infinite;
-  -webkit-animation: network__faces--animation 21.5s ease-in-out infinite;
+  animation: network__faces--animation-two 41.5s ease-in-out infinite;
+  -webkit-animation: network__faces--animation-two 41.5s ease-in-out infinite;
 }
 
 @keyframes network__faces--animation {
     0% {
-        transform: scale(1.0);
+        transform: scale(0.7);
         filter: blur(2px);
     }
     20% {
         filter: blur(0);
     }
     50% {
-        transform: scale(1.5);
+        transform: scale(1.2);
         filter: blur(0);
     }
     80% {
         filter: blur(0);
     }
     100% {
-        transform: scale(1.0);
+        transform: scale(0.7);
         filter: blur(2px);
+    }
+}
+
+@keyframes network__faces--animation-two {
+    0% {
+        transform: scale(1.2);
+        filter: blur(0);
+    }
+    20% {
+        filter: blur(0);
+    }
+    50% {
+        transform: scale(0.7);
+        filter: blur(2px);
+    }
+    80% {
+        filter: blur(0);
+    }
+    100% {
+        transform: scale(1.2);
+        filter: blur(0);
     }
 }
 
@@ -710,13 +733,13 @@ ul {
 */
 
 .map {
-  margin-top: 180px;
+  margin-top: 510px;
 }
 
 .map__map {
   position: absolute;
   width: 100%;
-  top: -310px;
+  top: -10px;
   right: -1170px;
   transition: all 1.4s cubic-bezier(0.5,0.25,0,1);
   transform: scale(2.5) rotate(-19deg);
