@@ -1,0 +1,140 @@
+@media(max-width:1300px){
+  .container{max-width:1050px}
+  .highlights .highlights__item .highlights__description p{font-size:18px;min-height:75px}
+  .trustees .trustees__logos .trustees__item img{height:70px}
+  #banner .banner-quote{font-size:40px}
+  .highlights .highlights__item{}
+  .cta-block .cta-block__dial p{font-size:23px}
+}
+@media(max-width:1100px){
+  #navigation{position:relative}
+  #navigation a#mobilemenu-trigger{float:left;background:url(../images/mobile-menu.png) no-repeat 50% 50%;width:70px;display:block;position:absolute;left:0;top:0;bottom:0;transition: all 0.4s}
+  #navigation a#mobilemenu-trigger.close-that{background-image:url(../images/mobile-menu-close.png)}
+  #navigation .mainmenu{float:none;position:absolute;left:0;right:0;top:100%;z-index:55;background-color:#17263e;transition:all 0.5s;max-height:0;overflow:hidden}
+  #navigation .mainmenu.open-that{max-height:700px}
+  #navigation .mainmenu .mainmenu__content{}
+  #navigation .mainmenu .mainmenu__content > li{float:none;width:100%;display:block}
+  #navigation .mainmenu .mainmenu__content > li > a{float:none;padding:10px 15px!important;border-bottom:1px solid #213554}
+  *{}
+  .btn{font-size:16px;line-height:35px;height:35px;padding:0 20px}
+  .btn.btn--white-border{}
+  a{}
+  .container{margin:0 20px}
+  .container:after{}
+  body{}
+  header{padding:20px 0}
+  header .logo{float:none;text-align:center}
+  header .logo img.logo__image{width:280px}
+  header .cta-header{float:none;padding:0;background:none;text-align:center;font-size:16px}
+  header .cta-header .cta-header__link{display:block;font-size:22px}
+  #navigation{height:62px;padding:14px 0}
+  #navigation a.mobilemenu-trigger{}
+  #navigation .mainmenu{}
+  #navigation .mainmenu .mainmenu__content{}
+  #navigation .mainmenu .mainmenu__content > li{}
+  #navigation .mainmenu .mainmenu__content > li:first-child > a{}
+  #navigation .mainmenu .mainmenu__content > li:last-child > a{}
+  #navigation .mainmenu .mainmenu__content > li > a{}
+  #navigation .btn{}
+  #banner{display:flex;flex-direction:column-reverse}
+  #banner:before{position:absolute;content:'';left:0;top:0;right:0;bottom:0;z-index:1;background:url(../images/mobile-banner-bg.png) repeat-x 0 0}
+  #banner > .container{padding-top:20px;height:auto;width:100%;z-index:2;margin:0;padding:0 20px}
+  #banner .banner-quote{top:0;bottom:auto;background:transparent;text-align:center;padding:20px 0;font-size:33px;border:0;position:static}
+  #banner .banner-quote .banner-quote__bold{font-size:25px}
+  .freequote{position:static;max-width:100%;margin:0 auto;width:400px}
+  .freequote .freequote__title{font-size:24px;text-align:center}
+  .freequote .freequote__form{}
+  .freequote__form .freequote__field{}
+  .freequote__form .freequote__field .freequote__input{}
+  .freequote__form .freequote__field.freequote__field--radio{}
+  .freequote__form .freequote__field.freequote__field--radio:after{}
+  .freequote__form .freequote__field.freequote__field--radio .freequote__field__label{font-size:17px}
+  .freequote__form .freequote__field.freequote__field--radio .freequote__field__option{}
+  .freequote__form .freequote__field.freequote__field--radio .freequote__field__option input{}
+  .freequote__form .freequote__field.freequote__field--radio .freequote__field__option label{font-size:15px}
+  .freequote__form .freequote__note{}
+  .freequote__form .freequote__btnblock{}
+  .freequote__form .freequote__btnblock .btn{}
+  .freequote__form .freequote__required-note{}
+  #contentarea{}
+  #contentarea .trustees{padding:25px 0}
+  #contentarea .highlights{margin:30px 0 0;padding-bottom:10px}
+  #contentarea .highlights:after{}
+  .trustees .trustees__title{font-size:20px}
+  .trustees .trustees__logos{}
+  .trustees .trustees__logos .trustees__item{}
+  .trustees .trustees__logos .trustees__item img{height:48px}
+  .highlights .highlights__item{width:100%;float:none;text-align:left;padding:0 0 10px;display:flex;position:static;align-items:center}
+  .highlights .highlights__item:after{content:'';display:block;clear:both}
+  .highlights .highlights__item .highlights__thumb{width:100px;margin-right:20px}
+  .highlights .highlights__item .highlights__thumb img{max-width:100%}
+  .highlights .highlights__item .highlights__description{flex:1}
+  .highlights .highlights__item .highlights__description p{margin:0;min-height:auto;font-size:18px}
+  .highlights .highlights__item .highlights__description p br{display:none}
+  .highlights .highlights__item .highlights__cta{display:none}
+  .highlights .highlights__item .highlights__cta .btn{}
+  .cta-block{padding:40px 0 50px}
+  .cta-block .cta-block__description{padding-bottom:30px}
+  .cta-block .cta-block__description p{font-size:18px}
+  .cta-block .cta-block__dial{background:none;text-align:center;display:block;border:1px solid #e20026;border-radius:10px;position:relative;padding:20px 20px 34px 20px}
+  .cta-block .cta-block__dial p{font-size:18px}
+  .cta-block .cta-block__dial p strong{display:block}
+  .cta-block .cta-block__dial .btn{border:6px solid #1a2b45;position:absolute;border-radius:10px;height:auto;bottom:-24px;width:220px;left:50%;margin-left:-110px}
+  footer.footer{padding:30px 0 20px}
+  footer.footer .footer__logo{}
+  footer.footer .footer__logo img{}
+  footer.footer .footer__navigation{font-size:12px}
+  footer.footer .footer__navigation ul.footer__navigation__ul{}
+  footer.footer .footer__navigation ul.footer__navigation__ul > li{}
+  footer.footer .footer__navigation ul.footer__navigation__ul > li > a{}
+  footer.footer .footer__terms{font-size:10px}
+  footer.footer .footer__terms p{}
+}
+@media (max-width:500px){
+  #navigation{}
+  #navigation a#mobilemenu-trigger{}
+  #navigation .mainmenu{}
+  #navigation .mainmenu.open-that{}
+  #navigation .mainmenu .mainmenu__content > li{}
+  #navigation .mainmenu .mainmenu__content > li > a{font-size: 20px;}
+  .btn{}
+  .container{}
+  header{}
+  header .logo{}
+  header .logo img.logo__image{}
+  header .cta-header{}
+  header .cta-header .cta-header__link{}
+  #navigation{}
+  #banner{}
+  #banner:before{}
+  #banner > .container{}
+  #banner .banner-quote{font-size:20px}
+  #banner .banner-quote .banner-quote__bold{font-size:24px}
+  .freequote{padding:20px 20px 10px}
+  .freequote .freequote__title{}
+  .freequote__form .freequote__field.freequote__field--radio .freequote__field__label{display:block;float:none;padding-bottom:5px}
+  .freequote__form .freequote__field.freequote__field--radio .freequote__field__option{margin:0 10px 0 0;float:left}
+  .freequote__form .freequote__field.freequote__field--radio .freequote__field__option label{}
+  #contentarea .trustees{}
+  #contentarea .highlights{}
+  .trustees .trustees__title{font-size:18px}
+  .trustees .trustees__logos .trustees__item{padding:0 15px}
+  .trustees .trustees__logos .trustees__item img{height:35px}
+  .highlights .highlights__item{}
+  .highlights .highlights__item:after{}
+  .highlights .highlights__item .highlights__thumb{width:80px}
+  .highlights .highlights__item .highlights__thumb img{}
+  .highlights .highlights__item .highlights__description{}
+  .highlights .highlights__item .highlights__description p{font-size:15px}
+  .highlights .highlights__item .highlights__cta{}
+  .cta-block{}
+  .cta-block .cta-block__description{}
+  .cta-block .cta-block__description p{}
+  .cta-block .cta-block__dial{}
+  .cta-block .cta-block__dial p{}
+  .cta-block .cta-block__dial p strong{}
+  .cta-block .cta-block__dial .btn{}
+  footer.footer{}
+  footer.footer .footer__navigation{}
+  footer.footer .footer__terms{}
+}
